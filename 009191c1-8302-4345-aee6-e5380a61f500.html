@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coiffure à Domicile - Vidauban | Services de coiffure professionnelle chez vous</title>
+    <meta name="description" content="Coiffeuse professionnelle à Vidauban (83) vous propose des services de coiffure à domicile pour femmes, hommes et enfants. Praticité, confort et expertise.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        beige: "#F5F0E6",
+                        rose: "#F8E8E8",
+                        doré: "#E8D9C5",
+                        texte: "#5A5A5A",
+                        accent: "#D4A59A"
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Raleway', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-image: url("https://picsum.photos/1600/900?random=101");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-body text-texte bg-beige">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-heading text-rose-600">Coiffure<span class="text-doré">Domicile</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#services" class="hover:text-accent transition">Services</a>
+                <a href="#about" class="hover:text-accent transition">À propos</a>
+                <a href="#gallery" class="hover:text-accent transition">Galerie</a>
+                <a href="#reviews" class="hover:text-accent transition">Avis</a>
+                <a href="#contact" class="bg-rose px-4 py-2 rounded-full text-white hover:bg-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden text-texte">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern bg-blend-overlay bg-rose-900/20">
+        <div class="container mx-auto px-4 py-32 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading text-white mb-6">Votre coiffeuse à domicile à Vidauban</h1>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Un moment de détente et de beauté dans le confort de votre maison</p>
+            <a href="#contact" class="bg-doré text-white px-8 py-3 rounded-full font-medium hover:bg-accent transition">Prendre rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading text-center mb-12">Nos Prestations</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-beige p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-rose rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-cut text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading text-center mb-3">Coupes & Styling</h3>
+                    <ul class="space-y-2">
+                        <li>Coupe femme - 45€</li>
+                        <li>Coupe homme - 35€</li>
+                        <li>Coupe enfant - 30€</li>
+                        <li>Brushing - à partir de 25€</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-beige p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-rose rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-paint-brush text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading text-center mb-3">Couleurs</h3>
+                    <ul class="space-y-2">
+                        <li>Coloration - à partir de 55€</li>
+                        <li>Mèches - à partir de 65€</li>
+                        <li>Balayage - à partir de 70€</li>
+                        <li>Shampoing tonique - 25€</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-beige p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-rose rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading text-center mb-3">Événements</h3>
+                    <ul class="space-y-2">
+                        <li>Coiffure mariage - à partir de 80€</li>
+                        <li>Essai coiffure - 50€</li>
+                        <li>Maquillage - à partir de 40€</li>
+                        <li>Forfait mariée complète - sur devis</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="mb-4">Forfaits famille et abonnements disponibles - Contactez-moi pour plus d'informations</p>
+                <a href="#contact" class="inline-block bg-rose text-white px-6 py-2 rounded-full hover:bg-accent transition">Demander un devis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-beige">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/600/800?random=102" alt="Portrait de la coiffeuse" class="rounded-lg shadow-md w-full" loading="lazy">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-heading mb-6">À propos de moi</h2>
+                    <p class="mb-4">Je suis Marie, coiffeuse diplômée avec plus de 10 ans d'expérience, spécialisée dans les services à domicile.</p>
+                    <p class="mb-4">Passionnée par mon métier, j'aime créer des looks qui mettent en valeur chaque personne, tout en offrant une expérience relaxante dans l'environnement familier de votre maison.</p>
+                    <p class="mb-6">J'interviens dans un rayon de 20km autour de Vidauban (83), avec tout le matériel nécessaire pour vous offrir un service professionnel et sans tracas.</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-doré rounded-full flex items-center justify-center">
+                            <i class="fas fa-award text-white"></i>
+                        </div>
+                        <p>Diplôme CAP Coiffure • Formation continue chaque année</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading text-center mb-12">Galerie</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://picsum.photos/400/500?random=103" alt="Coupe femme moderne" class="rounded-lg shadow-sm hover:shadow-md transition" loading="lazy">
+                <img src="https://picsum.photos/400/500?random=104" alt="Balayage doré" class="rounded-lg shadow-sm hover:shadow-md transition" loading="lazy">
+                <img src="https://picsum.photos/400/500?random=105" alt="Coiffure de mariage" class="rounded-lg shadow-sm hover:shadow-md transition" loading="lazy">
+                <img src="https://picsum.photos/400/500?random=106" alt="Coupe homme élégante" class="rounded-lg shadow-sm hover:shadow-md transition" loading="lazy">
+                <img src="https://picsum.photos/400/500?random=107" alt="Mèches caramel" class="rounded-lg shadow-sm hover:shadow-md transition" loading="lazy">
+                <img src="https://picsum.photos/400/500?random=108" alt="Coupe enfant" class="rounded-lg shadow-sm hover:shadow-md transition" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-beige">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading text-center mb-12">Avis Clients</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                    </div>
+                    <p class="mb-4 italic">"Marie est une professionnelle exceptionnelle. Elle a su comprendre exactement ce que je voulais et le résultat était parfait. Le fait de pouvoir être coiffée chez moi est un vrai luxe!"</p>
+                    <p class="font-medium">- Sophie, Vidauban</p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                    </div>
+                    <p class="mb-4 italic">"Service impeccable pour le mariage de ma fille. Marie est ponctuelle, discrète et d'une grande douceur. Les coiffures étaient magnifiques et ont tenu toute la journée."</p>
+                    <p class="font-medium">- Nathalie, Les Arcs</p>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                        <i class="fas fa-star text-doré"></i>
+                    </div>
+                    <p class="mb-4 italic">"Je fais appel à Marie régulièrement pour toute la famille. Mes enfants adorent être coiffés à la maison et moi j'apprécie le gain de temps. Toujours souriante et professionnelle."</p>
+                    <p class="font-medium">- Thomas, Taradeau</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading text-center mb-12">Contact & Rendez-vous</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-1">Nom complet</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-1">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose">
+                        </div>
+                        <div>
+                            <label for="service" class="block mb-1">Service souhaité</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose">
+                                <option value="">Sélectionnez un service</option>
+                                <option value="coupe-femme">Coupe femme</option>
+                                <option value="coupe-homme">Coupe homme</option>
+                                <option value="coupe-enfant">Coupe enfant</option>
+                                <option value="coloration">Coloration</option>
+                                <option value="mariage">Coiffure mariage</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose"></textarea>
+                        </div>
+                        <button type="submit" class="bg-rose text-white px-6 py-3 rounded-full hover:bg-accent transition">Envoyer la demande</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-beige p-8 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-heading mb-4">Coordonnées</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                                <p>Intervention à domicile dans un rayon de 20km autour de Vidauban (83690)</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                                <a href="tel:+33612345678" class="hover:text-accent">06 12 34 56 78</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp mr-3 text-accent"></i>
+                                <a href="https://wa.me/33612345678" class="hover:text-accent">Envoyer un message WhatsApp</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-3 text-accent"></i>
+                                <a href="mailto:contact@coiffure-domicile-vidauban.fr" class="hover:text-accent">contact@coiffure-domicile-vidauban.fr</a>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-heading mt-8 mb-4">Horaires</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Lundi - Vendredi</span>
+                                <span>9h - 19h</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Samedi</span>
+                                <span>9h - 17h</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Dimanche</span>
+                                <span>Sur rendez-vous</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-texte text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-heading mb-4">Coiffure à Domicile</h3>
+                    <p>Services de coiffure professionnelle à votre domicile dans la région de Vidauban (83).</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-heading mb-4">Liens rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-doré transition">Services</a></li>
+                        <li><a href="#about" class="hover:text-doré transition">À propos</a></li>
+                        <li><a href="#gallery" class="hover:text-doré transition">Galerie</a></li>
+                        <li><a href="#contact" class="hover:text-doré transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-heading mb-4">Réseaux sociaux</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-doré transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-doré transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-doré transition">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Coiffure à Domicile Vidauban - Tous droits réservés</p>
+                <p class="mt-2 text-sm text-white/70">Site réalisé avec passion pour votre beauté</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        const form = document.querySelector('form');
+        if(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Merci pour votre demande ! Je vous contacterai rapidement pour confirmer le rendez-vous.');
+                form.reset();
+            });
+        }
+
+        // Mobile menu toggle (would need additional implementation)
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        if(mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                // Implementation for mobile menu would go here
+                alert('Menu mobile - À implémenter');
+            });
+        }
+    </script>
+</body>
+</html>
